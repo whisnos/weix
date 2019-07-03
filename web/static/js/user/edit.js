@@ -17,12 +17,14 @@ var edit_user_ops = {
             var email_target = $('.user_edit_wrap input[name=email]');
             var email = email_target.val();
 
-            if(nickname==undefined || nickname.length<1){
-                common_ops.tip("请输入正确的昵称~~~",nickname_target)
+            if( !nickname || nickname.length<1){
+                common_ops.tip("请输入正确的昵称~~~",nickname_target);
+                return false;
             }
 
             if(email==undefined || email.length<1){
-                common_ops.tip("请输入正确的昵称~~~",email_target)
+                common_ops.tip("请输入正确的昵称~~~",email_target);
+                return false;
             }
             btn_target.addClass("disabled");
             $.ajax({

@@ -5,7 +5,7 @@ App({
     globalData: {
         userInfo: null,
         version: "1.0",
-        shopName: "特产",
+        shopName: "测试开发...",
         domain: "http://127.0.0.1:8999/api"
     },
     tip: function (params) {
