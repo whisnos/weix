@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5aa94ca-1166-4f59-af07-c0d4a05a56db" name="Default" comment="" />
+    <list default="true" id="d5aa94ca-1166-4f59-af07-c0d4a05a56db" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authinterceptors.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Authinterceptors.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/interceptors/Authinterceptors.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
@@ -89,20 +91,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-104">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserService.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/libs/user/UserService.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="后台初始账户.sql" pinned="false" current-in-tab="false">
-        <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/数据库文件/后台初始账户.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -142,10 +144,12 @@
       <replace>ops_render</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/static/js/account/set.js" />
         <option value="$PROJECT_DIR$/web/controllers/account/t.py" />
         <option value="$PROJECT_DIR$/web/static/js/account/ops.js" />
         <option value="$PROJECT_DIR$/web/templates/account/index.html" />
@@ -196,6 +200,7 @@
         <option value="$PROJECT_DIR$/common/libs/user/UserService.py" />
         <option value="$PROJECT_DIR$/web/controllers/user/User.py" />
         <option value="$PROJECT_DIR$/config/base_setting.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -216,6 +221,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -393,10 +399,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32535365" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.43416756" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48474947" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917626" visible="true" weight="0.20575693" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -631,9 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -771,6 +774,13 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
