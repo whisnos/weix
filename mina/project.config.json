@@ -11,8 +11,10 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
 	"appid": "wx8d5572d32be1ec04",
-	"projectname": "test_mina",
+	"projectname": "mina",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

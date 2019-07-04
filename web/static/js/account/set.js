@@ -59,9 +59,15 @@ var account_set_ops = {
                 },
                 dataType:'json',
                 success:function (res) {
+
                     if (res.code==200){
+                        console.log(1);
+                        common_ops.alert(res.msg)
+                    }else{
+                        console.log(2);
                         common_ops.alert(res.msg)
                     }
+
                 }
             })
         })

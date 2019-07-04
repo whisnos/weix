@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
 import os
-
+from common.models import db
 
 # 定义一个类 做按需分离
 class Application(Flask):
@@ -18,11 +18,12 @@ class Application(Flask):
 		db.init_app(self)
 
 
-db = SQLAlchemy()
+# db = SQLAlchemy()
 # app = False(__name__)
 # db = SQLAlchemy(app)
 app = Application(__name__, template_folder=os.getcwd() + '/web/templates/', root_path=os.getcwd())
 manager = Manager(app)
+
 '''
 函数模板 注入
 '''
