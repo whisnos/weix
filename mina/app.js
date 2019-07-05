@@ -55,7 +55,9 @@ App({
     // 自定义头部格式
     getRequestHeader: function () {
         return {
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'Authorization':this.getCache("token")
+
         }
     },
     buildUrl: function (path, params) {
