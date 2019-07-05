@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5aa94ca-1166-4f59-af07-c0d4a05a56db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/common/libs/food/FoodService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/member/MemberCart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/js/food/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/Helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/Helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/UploadService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/UploadService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/UrlManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/UrlManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/food/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/food/Food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/food/FoodCat.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/food/FoodCat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/info.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/api/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/Food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/food/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/food/Food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/upload/Upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/upload/Upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/js/food/set.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/food/set.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/food/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/food/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/food/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/food/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/food/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/food/set.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +25,8 @@
       <file leaf-file-name="Food.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/controllers/api/Food.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="120" column="45" lean-forward="true" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+            <state relative-caret-position="119">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="e#24#50#0" expanded="true" />
               </folding>
@@ -887,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/controllers/api/Food.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="120" column="45" lean-forward="true" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+        <state relative-caret-position="119">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#24#50#0" expanded="true" />
           </folding>

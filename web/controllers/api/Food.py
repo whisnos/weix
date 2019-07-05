@@ -97,13 +97,12 @@ def foodInfo():
     req = request.values
     id = int(req['id']) if 'id' in req else 0
     food_info = Food.query.filter_by(id=id).first()
-    print('member_info',food_info)
     if not food_info or not food_info.status:
         resp['code'] = -1
         resp['msg'] = "美食已下架"
         return jsonify(resp)
-    if 'member_info' in g:
-        member_info = g.member_info
+
+    member_info = g.member_info
     cart_number = 0
     if member_info:
         cart_number = MemberCart.query.filter_by(member_id=member_info.id).count()
