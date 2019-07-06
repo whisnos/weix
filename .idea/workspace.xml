@@ -2,64 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5aa94ca-1166-4f59-af07-c0d4a05a56db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/common/libs/member/CartService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/libs/pay/PayService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/libs/pay/WeChatService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/libs/queue/QueueService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/food/WxShareHistory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/member/MemberAddress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/pay/OauthAccessToken.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/pay/PayOrder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/pay/PayOrderCallbackData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/pay/PayOrderItem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/queue/QueueList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/controllers/api/Cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/controllers/api/Order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/interceptors/ApiAuthInterceptor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/weix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weix.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/controllers/api/My.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/Helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/Helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/food/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/food/Food.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/libs/pay/WeChatService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/pay/WeChatService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/models/pay/PayOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/pay/PayOrder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/285f94d2c6a9_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/28c36efa88d5_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/39986f42e7e0_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/48e70530bd8e_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/5150aae4f48b_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/63e1652d568e_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/87d34f07e940_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/b12d1a73e7b1_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/b4630f7ce52b_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/cc52c0ffc922_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/cf0f896aee88_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/d45520efb74a_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/da351b7febb3_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/df86b7dd0819_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/ea4db8d9510a_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/ef30c3f7c44d_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/f302e9f0c3ea_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/cart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/cart/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/cart/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/food/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/food/info.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/pages/order/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/order/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/mina/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mina/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/utils/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/api/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/Food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/api/Member.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/Member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mina/pages/my/order_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/my/order_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mina/pages/my/order_list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mina/pages/my/order_list.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/api/Order.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/Order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/interceptors/Authinterceptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/interceptors/Authinterceptors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www.py" beforeDir="false" afterPath="$PROJECT_DIR$/www.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/order/index.js">
+      <file leaf-file-name="PayOrder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/pay/PayOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="250">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -91,8 +42,8 @@
       <file leaf-file-name="Order.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/controllers/api/Order.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+            <state relative-caret-position="47">
+              <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -103,8 +54,8 @@
       <file leaf-file-name="PayService.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/libs/pay/PayService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+            <state relative-caret-position="-2265">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -112,28 +63,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayOrder.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/models/pay/PayOrder.py">
+      <file leaf-file-name="order_info.wxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mina/pages/my/order_info.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="-399" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_list.wxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mina/pages/my/order_list.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodService.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/libs/food/FoodService.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="QueueService.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/libs/queue/QueueService.py">
+      <file leaf-file-name="order_list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mina/pages/my/order_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <element signature="e#24#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="356">
+              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -141,8 +91,8 @@
       <file leaf-file-name="WeChatService.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/libs/pay/WeChatService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="354">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="32" />
               <folding>
                 <element signature="e#24#66#0" expanded="true" />
               </folding>
@@ -150,29 +100,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemberAddress.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/models/member/MemberAddress.py">
+      <file leaf-file-name="order_list.js" pinned="false" current-in-tab="false">
+        <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/mina/pages/my/order_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="437">
+              <caret line="80" column="6" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="80" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/models/__init__.py">
+      <file leaf-file-name="base_setting.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/base_setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="203">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.wxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mina/pages/order/index.wxml">
+      <file leaf-file-name="My.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/controllers/api/My.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="57" column="55" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="55" />
+            <state relative-caret-position="309">
+              <caret line="32" column="39" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="45" />
+              <folding>
+                <element signature="e#24#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>build</find>
       <find>删除</find>
       <find>搜索</find>
       <find>buildI</find>
@@ -220,6 +172,7 @@
       <find>, server_default=db.FetchedValue()</find>
       <find>createOrder</find>
       <find>getCurrentDate</find>
+      <find>order_number</find>
     </findStrings>
     <replaceStrings>
       <replace>ops_render</replace>
@@ -232,9 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/controllers/account/Account.py" />
-        <option value="$PROJECT_DIR$/common/models/food/FoodCat.py" />
-        <option value="$PROJECT_DIR$/common/libs/UploadService.py" />
         <option value="$PROJECT_DIR$/common/libs/UrlManager.py" />
         <option value="$PROJECT_DIR$/web/controllers/upload/Upload.py" />
         <option value="$PROJECT_DIR$/common/libs/food/FoodService.py" />
@@ -248,7 +198,6 @@
         <option value="E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/数据库文件/后台初始账户.sql" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/manager.py" />
-        <option value="$PROJECT_DIR$/config/base_setting.py" />
         <option value="$PROJECT_DIR$/web/interceptors/Authinterceptors.py" />
         <option value="$PROJECT_DIR$/www.py" />
         <option value="$PROJECT_DIR$/common/models/food/Food.py" />
@@ -272,17 +221,21 @@
         <option value="$PROJECT_DIR$/mina/pages/food/info.js" />
         <option value="$PROJECT_DIR$/common/models/pay/OauthAccessToken.py" />
         <option value="$PROJECT_DIR$/common/models/pay/PayOrderCallbackData.py" />
-        <option value="$PROJECT_DIR$/common/models/pay/PayOrderItem.py" />
         <option value="$PROJECT_DIR$/common/models/member/MemberAddress.py" />
-        <option value="$PROJECT_DIR$/web/controllers/api/__init__.py" />
         <option value="$PROJECT_DIR$/common/models/queue/QueueList.py" />
         <option value="$PROJECT_DIR$/common/models/__init__.py" />
-        <option value="$PROJECT_DIR$/web/controllers/api/Order.py" />
-        <option value="$PROJECT_DIR$/common/libs/pay/WeChatService.py" />
         <option value="$PROJECT_DIR$/common/libs/queue/QueueService.py" />
         <option value="$PROJECT_DIR$/mina/pages/order/index.js" />
         <option value="$PROJECT_DIR$/common/libs/pay/PayService.py" />
+        <option value="$PROJECT_DIR$/common/models/pay/PayOrderItem.py" />
+        <option value="$PROJECT_DIR$/web/controllers/api/My.py" />
+        <option value="$PROJECT_DIR$/web/controllers/api/__init__.py" />
         <option value="$PROJECT_DIR$/common/models/pay/PayOrder.py" />
+        <option value="$PROJECT_DIR$/mina/pages/my/order_list.js" />
+        <option value="$PROJECT_DIR$/web/controllers/api/Order.py" />
+        <option value="$PROJECT_DIR$/common/libs/pay/WeChatService.py" />
+        <option value="$PROJECT_DIR$/mina/pages/my/order_list.wxml" />
+        <option value="$PROJECT_DIR$/config/base_setting.py" />
       </list>
     </option>
   </component>
@@ -309,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,6 +332,11 @@
             <path>
               <item name="weix" type="b2602c69:ProjectViewProjectNode" />
               <item name="weix" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weix" type="462c0819:PsiDirectoryNode" />
               <item name="mina" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,7 +374,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,19 +385,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Flask\weix\web\controllers\api" />
+      <recent name="D:\Flask\weix\common\models" />
+      <recent name="D:\Flask\weix\common\libs" />
+      <recent name="D:\Flask\weix\common\models\member" />
+      <recent name="D:\Flask\weix\common\models\log" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Flask\weix\common\libs\member" />
       <recent name="D:\Flask\weix\web\static\js\food" />
       <recent name="D:\Flask\weix\common\libs" />
       <recent name="D:\Flask\weix\web\controllers\food" />
       <recent name="D:\Flask\weix\web\controllers\member" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Flask\weix\common\models" />
-      <recent name="D:\Flask\weix\common\libs" />
-      <recent name="D:\Flask\weix\common\models\member" />
-      <recent name="D:\Flask\weix\common\models\log" />
-      <recent name="D:\Flask\weix\web\controllers\api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -568,8 +526,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32535365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.43899783" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917626" visible="true" weight="0.21428572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3529412" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917626" visible="true" weight="0.21641791" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -597,57 +555,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/web/interceptors/AuthInterceptor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/interceptors/Authinterceptors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mina/pages/food/info.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/food/Food.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/mina/utils/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mina/utils/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/food/WxShareHistory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/web/controllers/api/Member.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -685,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,9 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="12" column="28" lean-forward="true" selection-end-line="204" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,13 +631,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/libs/UploadService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/mina/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -766,9 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="29" column="45" selection-end-line="62" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="788">
           <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,9 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,30 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/pay/PayOrderItem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mina/pages/order/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -928,7 +790,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/libs/queue/QueueService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="228">
           <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="e#24#36#0" expanded="true" />
@@ -936,19 +798,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/libs/pay/WeChatService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="e#24#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/models/member/MemberAddress.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="304">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
@@ -958,35 +810,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mina/pages/order/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="570">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/controllers/api/Order.py">
+    <entry file="file://$PROJECT_DIR$/common/models/pay/PayOrderItem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#24#65#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/my/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/my/order_info.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/libs/pay/PayService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        <state relative-caret-position="-2265">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1560245728/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="5100" column="8" selection-start-line="5100" selection-start-column="8" selection-end-line="5100" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/models/pay/PayOrder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="250">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/新建文件夹 (2)/J/微信小程序/Python flask构建微信小程序订餐系统/coding-265/coding-265/完整源码/mina/pages/my/order_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="80" column="6" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="80" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/libs/pay/WeChatService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/My.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/controllers/api/Order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/my/order_list.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mina/pages/my/order_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/base_setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>

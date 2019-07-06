@@ -85,7 +85,7 @@ class WeChatService():
 
     def getAccessToken(self):
         token = None
-        token_info = OauthAccessToken.query.filter( OauthAccessToken.expired_time >= getCurrentDate() ).first()
+        token_info = OauthAccessToken.query.filter( OauthAccessToken.expired_time >= geneTime() ).first()
         if token_info:
             token = token_info.access_token
             return token
@@ -104,7 +104,7 @@ class WeChatService():
         model_token = OauthAccessToken()
         model_token.access_token = data['access_token']
         model_token.expired_time = date.strftime( "%Y-%m-%d %H:%M:%S" )
-        model_token.created_time = getCurrentDate()
+        model_token.created_time = geneTime()
         db.session.add( model_token )
         db.session.commit()
 

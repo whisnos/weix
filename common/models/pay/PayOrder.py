@@ -40,6 +40,7 @@ class PayOrder(db.Model):
 
     @property
     def status_desc(self):
+        from application import app
         return app.config['PAY_STATUS_DISPLAY_MAPPING'][ str( self.pay_status )]
 
     @property
