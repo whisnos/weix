@@ -9,20 +9,22 @@ from common.libs.LogService import LogService
 
 @app.before_request
 def before_request():
+	# 对不需要验证的路径 进行正则处理 其他页面如果用户没登录 则跳转到登录页面
+	ignore_urls = app.config['IGNORE_URLS']
+	ignore_check_urls = app.config['IGNORE_CHECK_URLS']
+
+	pattern = re.compile('%s' % "|".join(ignore_check_urls))
+
 	# 验证用户是否登录
 	user_info = check_login()
 	if user_info:
 		g.current_user = user_info
 	path = request.path
 
-	# 对不需要验证的路径 进行正则处理 其他页面如果用户没登录 则跳转到登录页面
-	ignore_urls = app.config['IGNORE_URLS']
-	ignore_check_urls = app.config['IGNORE_CHECK_URLS']
-
-	pattern = re.compile('%s' % "|".join(ignore_check_urls))
 	if pattern.match(path):
 		return
-
+	if '/api' in path:
+		return
 	# 加入日志记录
 	LogService.addAccessLog()
 	pattern = re.compile('%s' % "|".join(ignore_urls))

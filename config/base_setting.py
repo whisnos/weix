@@ -7,9 +7,10 @@ COOKIE_AUTH_NAME = "Wu_Rong"
 
 IGNORE_URLS = [
     "^/user/login",
+]
+API_IGNORE_URLS = [
     "^/api"
 ]
-
 IGNORE_CHECK_URLS = [
     "^/static",
     "^/favicon.ico"

@@ -10,7 +10,7 @@ App({
     },
     tip: function (params) {
         var that = this;
-        var title = params.hasOwnProperty('title') ? params['title'] : '提示信息';
+        var title = params.hasOwnProperty('title') ? params['title'] : 'XXX提示信息';
         var content = params.hasOwnProperty('content') ? params['content'] : '';
         wx.showModal({
             title: title,
@@ -30,7 +30,7 @@ App({
         })
     },
     alert: function (params) {
-        var title = params.hasOwnProperty('title') ? params['title'] : '提示信息';
+        var title = params.hasOwnProperty('title') ? params['title'] : 'AAA提示信息';
         var content = params.hasOwnProperty('content') ? params['content'] : '';
         wx.showModal({
             title: title,
@@ -75,7 +75,7 @@ App({
     getCache: function (key) {
         var value = undefined;
         try {
-            value = wx.getStorageInfoSync(key)
+            value = wx.getStorageSync(key)
         } catch (e) {
         }
         return value;

@@ -1,4 +1,4 @@
-Python Flask订餐系统
+Python Flask
 =====================
 ##启动
 * export ops_config=local|production && python manage.py runserver
@@ -40,3 +40,7 @@ Python Flask订餐系统
 ##可参考资料
 * [python-Flask（jinja2）语法：过滤器](https://www.jianshu.com/p/3127ac233518)
 * [SQLAlchemy 各种查询语句写法](https://wxnacy.com/2017/08/14/python-2017-08-14-sqlalchemy-filter/)
+
+INSERT INTO `user` (`uid`, `nickname`, `mobile`, `email`, `sex`, `avatar`, `login_name`, `login_pwd`, `login_salt`, `status`, `updated_time`, `created_time`)
+VALUES
+	(1, 'wron', '11012345679', 'wron@163.com', 1, '', 'wron', '4072bbb5b6369c983e24b3f750f6d5af', 'cF3JfH5FJfQ8B2Ba', 1, '2017-03-15 14:08:48', '2017-03-15 14:08:48');

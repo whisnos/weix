@@ -97,6 +97,7 @@ def foodInfo():
     req = request.values
     id = int(req['id']) if 'id' in req else 0
     food_info = Food.query.filter_by(id=id).first()
+    print('food_info',food_info.id)
     if not food_info or not food_info.status:
         resp['code'] = -1
         resp['msg'] = "美食已下架"
@@ -105,7 +106,11 @@ def foodInfo():
     member_info = g.member_info
     cart_number = 0
     if member_info:
-        cart_number = MemberCart.query.filter_by(member_id=member_info.id).count()
+        membercart_obj = MemberCart.query.filter_by(member_id=member_info.id,food_id=food_info.id).first()
+        if membercart_obj:
+            cart_number=membercart_obj.quantity
+        else:
+            cart_number=0
     resp['data']['info'] = {
         "id": food_info.id,
         "name": food_info.name,

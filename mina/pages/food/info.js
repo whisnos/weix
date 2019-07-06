@@ -19,7 +19,7 @@ Page({
         shopType: "addShopCar",//购物类型，加入购物车或立即购买，默认为加入购物车,
         id: 0,
         shopCarNum: 4,
-        commentCount:2
+        commentCount: 2
     },
     onLoad: function (e) {
         var that = this;
@@ -27,7 +27,7 @@ Page({
             id: e.id
         });
     },
-    onShow:function(){
+    onShow: function () {
         this.getInfo();
         this.getComments();
     },
@@ -70,13 +70,11 @@ Page({
     },
     buyNow: function () {
         var data = {
-            goods: [
-                {
-                    "id": this.data.info.id,
-                    "price": this.data.info.price,
-                    "number": this.data.buyNumber
-                }
-            ]
+            goods: [{
+                "id": this.data.info.id,
+                "price": this.data.info.price,
+                "number": this.data.buyNumber
+            }]
         };
         this.setData({
             hideShopPopup: true
@@ -139,23 +137,23 @@ Page({
                 var resp = res.data;
                 if (resp.code != 200) {
                     app.alert({"content": resp.msg});
-                    wx.navigateTo({
-                        url: "/pages/food/index"
-                    });
+                    // wx.navigateTo({
+                    //     url: "/pages/food/index"
+                    // });
                     return;
                 }
 
                 that.setData({
                     info: resp.data.info,
                     buyNumMax: resp.data.info.stock,
-                    shopCarNum:resp.data.cart_number
+                    shopCarNum: resp.data.cart_number
                 });
 
                 WxParse.wxParse('article', 'html', resp.data.info.summary, that, 5);
             }
         });
     },
-    getComments:function(){
+    getComments: function () {
         var that = this;
         wx.request({
             url: app.buildUrl("/food/comments"),
@@ -179,10 +177,12 @@ Page({
     },
     onShareAppMessage: function () {
         var that = this;
+
         return {
             title: that.data.info.name,
             path: '/pages/food/info?id=' + that.data.info.id,
             success: function (res) {
+                console.log(1);
                 // 转发成功
                 wx.request({
                     url: app.buildUrl("/member/share"),
@@ -197,6 +197,7 @@ Page({
                 });
             },
             fail: function (res) {
+                console.log(3);
                 // 转发失败
             }
         }

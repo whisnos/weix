@@ -1,5 +1,6 @@
+from common.models.food.WxShareHistory import WxShareHistory
 from web.controllers.api import route_api
-from flask import request, jsonify
+from flask import request, jsonify, g
 from application import app, db
 import requests, json
 from common.models.member.OauthMemberBind import OauthMemberBind
@@ -103,4 +104,19 @@ def checkReg():
     resp['data'] = {
         "token": token
     }
+    return jsonify(resp)
+
+@route_api.route("/member/share",methods = [ "POST" ])
+def memberShare():
+    resp = {'code': 200, 'msg': '操作成功~', 'data': {}}
+    req = request.values
+    url = req['url'] if 'url' in req else ''
+    member_info = g.member_info
+    model_share = WxShareHistory()
+    if member_info:
+        model_share.member_id = member_info.id
+    model_share.share_url = url
+    model_share.created_time = geneTime()
+    db.session.add(model_share)
+    db.session.commit()
     return jsonify(resp)

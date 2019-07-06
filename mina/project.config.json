@@ -9,7 +9,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.94",
+	"libVersion": "2.7.3",
 	"appid": "wx8d5572d32be1ec04",
 	"projectname": "mina",
 	"isGameTourist": false,

@@ -15,6 +15,8 @@ Page({
         scrollTop: "0",
         loadingMoreHidden: true,
         searchInput: '',
+        p:1,
+        // processing:false,
     },
     onLoad: function () {
         var that = this;
@@ -23,62 +25,65 @@ Page({
             title: app.globalData.shopName
         });
 
-        that.setData({
-            banners: [
-                {
-                    "id": 1,
-                    "pic_url": "/images/food.jpg"
-                },
-                {
-                    "id": 2,
-                    "pic_url": "/images/food.jpg"
-                },
-                {
-                    "id": 3,
-                    "pic_url": "/images/food.jpg"
-                }
-            ],
-            categories: [
-                {id: 0, name: "全部"},
-                {id: 1, name: "川菜"},
-                {id: 2, name: "东北菜"},
-            ],
-            activeCategoryId: 0,
-			goods: [
-			                {
-			                    "id": 1,
-			                    "name": "小鸡炖蘑菇-1",
-			                    "min_price": "15.00",
-			                    "price": "15.00",
-			                    "pic_url": "/images/food.jpg"
-			                },
-			                {
-			                    "id": 2,
-			                    "name": "小鸡炖蘑菇-1",
-			                    "min_price": "15.00",
-			                    "price": "15.00",
-			                    "pic_url": "/images/food.jpg"
-			                },
-			                {
-			                    "id": 3,
-			                    "name": "小鸡炖蘑菇-1",
-			                    "min_price": "15.00",
-			                    "price": "15.00",
-			                    "pic_url": "/images/food.jpg"
-			                },
-			                {
-			                    "id": 4,
-			                    "name": "小鸡炖蘑菇-1",
-			                    "min_price": "15.00",
-			                    "price": "15.00",
-			                    "pic_url": "/images/food.jpg"
-			                }
-
-			 ],
-            loadingMoreHidden: false
-        });
-        this.getBannerAndCat();
+        // that.setData({
+        //     banners: [
+        //         {
+        //             "id": 1,
+        //             "pic_url": "/images/food.jpg"
+        //         },
+        //         {
+        //             "id": 2,
+        //             "pic_url": "/images/food.jpg"
+        //         },
+        //         {
+        //             "id": 3,
+        //             "pic_url": "/images/food.jpg"
+        //         }
+        //     ],
+        //     categories: [
+        //         {id: 0, name: "全部"},
+        //         {id: 1, name: "川菜"},
+        //         {id: 2, name: "东北菜"},
+        //     ],
+        //     activeCategoryId: 0,
+			// goods: [
+			//                 {
+			//                     "id": 1,
+			//                     "name": "小鸡炖蘑菇-1",
+			//                     "min_price": "15.00",
+			//                     "price": "15.00",
+			//                     "pic_url": "/images/food.jpg"
+			//                 },
+			//                 {
+			//                     "id": 2,
+			//                     "name": "小鸡炖蘑菇-1",
+			//                     "min_price": "15.00",
+			//                     "price": "15.00",
+			//                     "pic_url": "/images/food.jpg"
+			//                 },
+			//                 {
+			//                     "id": 3,
+			//                     "name": "小鸡炖蘑菇-1",
+			//                     "min_price": "15.00",
+			//                     "price": "15.00",
+			//                     "pic_url": "/images/food.jpg"
+			//                 },
+			//                 {
+			//                     "id": 4,
+			//                     "name": "小鸡炖蘑菇-1",
+			//                     "min_price": "15.00",
+			//                     "price": "15.00",
+			//                     "pic_url": "/images/food.jpg"
+			//                 }
+        //
+			//  ],
+        //     loadingMoreHidden: false
+        // });
+        // this.getBannerAndCat();
         this.getFoodList();
+    },
+    onShow:function(){
+        this.getBannerAndCat();
     },
     scroll: function (e) {
         var that = this, scrollTop = that.data.scrollTop;
@@ -136,6 +141,22 @@ Page({
                 that.getFoodList();
             }
         });
+    },
+    catClick:function(e){
+        this.setData({
+           activeCategoryId:e.currentTarget.id,
+            p:1,
+            goods:[],
+            loadingMoreHidden:true,
+        //    表示此时是重新开始加载
+        });
+        this.getFoodList();
+    },
+    onReachBottom:function(){
+      var that = this;
+      setTimeout(function () {
+          that.getFoodList();
+      },500);
     },
     getFoodList: function () {
         var that = this;

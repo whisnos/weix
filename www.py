@@ -11,6 +11,7 @@ from web.controllers.api import route_api
 from web.controllers.upload.Upload import route_upload
 from web.interceptors.Authinterceptors import *
 from web.interceptors.ErrorInterceptors import *
+from web.interceptors.ApiAuthInterceptor import *
 
 # 路由注入
 app.register_blueprint(route_index, url_prefix='/')
