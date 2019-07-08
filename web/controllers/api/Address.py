@@ -108,6 +108,7 @@ def myAddressSet():
 def myAddressInfo():
     resp = {'code': 200, 'msg': '操作成功~', 'data': {}}
     req = request.values
+    print(type(req.get('id')))
     id = int(req['id']) if 'id' in req else 0
     member_info = g.member_info
 
