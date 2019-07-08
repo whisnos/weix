@@ -19,7 +19,7 @@ class MemberAddress(db.Model):
     area_id = db.Column(db.Integer, nullable=False)
     area_str = db.Column(db.String(50), nullable=False)
     address = db.Column(db.String(100), nullable=False)
-    status = db.Column(db.Integer, nullable=False)
+    status = db.Column(db.Integer, nullable=False,default=1)
     is_default = db.Column(db.Integer, nullable=False)
     updated_time = db.Column(db.DateTime, nullable=False)
     created_time = db.Column(db.DateTime, nullable=False)

@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-import hashlib,requests,uuid,json,datetime
+import hashlib, requests, uuid, json, datetime
 import xml.etree.ElementTree as ET
-from application import app,db
+from application import app, db
 from common.models.pay.OauthAccessToken import OauthAccessToken
 from common.libs.Helper import geneTime
+
+
 class WeChatService():
 
-    def __init__(self,merchant_key = None):
+    def __init__(self, merchant_key=None):
         self.merchant_key = merchant_key
 
     def create_sign(self, pay_data):
@@ -16,26 +18,42 @@ class WeChatService():
 		'''
         stringA = '&'.join(["{0}={1}".format(k, pay_data.get(k)) for k in sorted(pay_data)])
         stringSignTemp = '{0}&key={1}'.format(stringA, self.merchant_key)
-        sign = hashlib.md5( stringSignTemp.encode("utf-8") ).hexdigest()
+        sign = hashlib.md5(stringSignTemp.encode("utf-8")).hexdigest()
         return sign.upper()
 
-    def get_pay_info(self,pay_data = None):
+    def get_pay_info(self, pay_data=None):
         '''
 		获取支付信息
 		:param xml_data:
 		:return:
 		'''
 
-        sign = self.create_sign( pay_data )
-        pay_data ['sign'] = sign
-        xml_data = self.dict_to_xml( pay_data )
+        sign = self.create_sign(pay_data)
+        # key_api_url='https://api.mch.weixin.qq.com/sandboxnew/pay/micropay'
+        # config_mina = app.config['MINA_APP']
+        # data = {
+        #     'mch_id': config_mina['mch_id'],
+        #     'nonce_str': '5K8264ILTKCH16CQ2502SI8ZNMTM67VS',
+        # }
+        # key_sign=self.create_sign(data)
+        # data['sign']=key_sign
+        # x_data=self.dict_to_xml( data )
+        # headers = {'Content-Type': 'application/xml'}
+        # r = requests.post(url=key_api_url, data=x_data.encode('utf-8'), headers=headers)
+        # r.encoding = "utf-8"
+        # print('微信支付11', r.text)
+
+        pay_data['sign'] = sign
+        xml_data = self.dict_to_xml(pay_data)
         headers = {'Content-Type': 'application/xml'}
         url = "https://api.mch.weixin.qq.com/pay/unifiedorder"
-        r =  requests.post( url= url, data=xml_data.encode('utf-8'),headers = headers)
+        # url = "https://api.mch.weixin.qq.com/sandboxnew/pay/micropay"
+        r = requests.post(url=url, data=xml_data.encode('utf-8'), headers=headers)
         r.encoding = "utf-8"
-        app.logger.info( r.text )
+        app.logger.info(r.text)
         if r.status_code == 200:
-            prepay_id = self.xml_to_dict( r.text ).get('prepay_id')
+            print(888)
+            prepay_id = self.xml_to_dict(r.text).get('prepay_id')
             pay_sign_data = {
                 'appId': pay_data.get('appid'),
                 'timeStamp': pay_data.get('out_trade_no'),
@@ -43,7 +61,7 @@ class WeChatService():
                 'package': 'prepay_id={0}'.format(prepay_id),
                 'signType': 'MD5'
             }
-            pay_sign = self.create_sign( pay_sign_data )
+            pay_sign = self.create_sign(pay_sign_data)
             pay_sign_data.pop('appId')
             pay_sign_data['paySign'] = pay_sign
             pay_sign_data['prepay_id'] = prepay_id
@@ -51,8 +69,7 @@ class WeChatService():
 
         return False
 
-
-    def dict_to_xml(self,dict_data):
+    def dict_to_xml(self, dict_data):
         '''
         dict to xml
         :param dict_data:
@@ -64,7 +81,7 @@ class WeChatService():
         xml.append("</xml>")
         return "".join(xml)
 
-    def xml_to_dict(self,xml_data):
+    def xml_to_dict(self, xml_data):
         '''
         xml to dict
         :param xml_data:
@@ -85,29 +102,27 @@ class WeChatService():
 
     def getAccessToken(self):
         token = None
-        token_info = OauthAccessToken.query.filter( OauthAccessToken.expired_time >= geneTime() ).first()
+        token_info = OauthAccessToken.query.filter(OauthAccessToken.expired_time >= geneTime()).first()
         if token_info:
             token = token_info.access_token
             return token
 
         config_mina = app.config['MINA_APP']
-        url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={0}&secret={1}"\
-            .format( config_mina['appid'],config_mina['appkey'] )
+        url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={0}&secret={1}" \
+            .format(config_mina['appid'], config_mina['appkey'])
 
-        r = requests.get( url = url )
+        r = requests.get(url=url)
         if r.status_code != 200 or not r.text:
             return token
 
-        data = json.loads( r.text )
+        data = json.loads(r.text)
         now = datetime.datetime.now()
         date = now + datetime.timedelta(seconds=data['expires_in'] - 200)
         model_token = OauthAccessToken()
         model_token.access_token = data['access_token']
-        model_token.expired_time = date.strftime( "%Y-%m-%d %H:%M:%S" )
+        model_token.expired_time = date.strftime("%Y-%m-%d %H:%M:%S")
         model_token.created_time = geneTime()
-        db.session.add( model_token )
+        db.session.add(model_token)
         db.session.commit()
 
         return data['access_token']
-
-
