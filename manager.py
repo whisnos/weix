@@ -8,7 +8,7 @@ import www
 # 可自定义命令
 from common.models import db
 
-manager.add_command('run', Server(host='0.0.0.0', port=app.config['SERVER_PORT'], use_debugger=True))
+manager.add_command('run', Server(host='0.0.0.0', port=app.config['SERVER_PORT'], use_debugger=True,use_reloader = True))
 migrate = Migrate(app, db)
 
 manager.add_command('db', MigrateCommand)

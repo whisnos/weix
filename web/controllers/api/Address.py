@@ -83,10 +83,10 @@ def myAddressSet():
     if address_info:
         model_address = address_info
     else:
-        default_address_count = MemberAddress.query.filter_by(is_default=1, member_id=member_info.id, status=1).count()
+        MemberAddress.query.filter_by(is_default=1, member_id=member_info.id, status=1).update({'is_default': 0})
         model_address = MemberAddress()
         model_address.member_id = member_info.id
-        model_address.is_default = 1 if default_address_count == 0 else 0
+        model_address.is_default = 1
         model_address.created_time = geneTime()
 
     model_address.nickname = nickname
