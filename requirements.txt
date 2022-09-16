@@ -16,7 +16,7 @@ Flask-WTF==0.14.2
 idna==2.8
 itsdangerous==0.24
 Jinja2==2.10
-Mako==1.0.12
+Mako==1.2.2
 MarkupSafe==1.0
 marshmallow==2.19.5
 mysqlclient==1.4.2.post1
